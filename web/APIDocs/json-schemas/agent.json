@@ -1,0 +1,151 @@
+{
+    "id": "https://www.iechor-europe.org/excelerate/WP2/json-schemas/0.3/Agent",
+    "$schema": "http://json-schema.org/draft-04/hyper-schema#",
+    "title": "Agent concept (IECHOR-EXCELERATE WP2 Benchmarking schemas)",
+    "type": "object",
+    "properties": {
+        "_id": {
+            "title": "The unique id of the agent. It should be something meaningful, like the agent name, its uri or an acronym",
+            "type": "string",
+            "minLength": 1
+        },
+        "_schema": {
+            "title": "The JSON schema absolute URI. It must match the value of 'id' in the JSON schema",
+            "type": "string",
+            "format": "uri",
+            "enum": ["https://www.iechor-europe.org/excelerate/WP2/json-schemas/0.3/Agent"]
+        },
+        "bioAgents_id": {
+            "title": "The unique id of the agent in EXCELERATE WP1 bio.agents registry",
+            "type": "string",
+            "format": "uri"
+        },
+        "name": {
+            "title": "Short agent name",
+            "minLength": 1,
+            "type": "string"
+        },
+        "description": {
+            "title": "Long agent name or description",
+            "type": "string"
+        },
+        "is_automated": {
+            "title": "Can this agent be automatically invoked?",
+            "type": "boolean"
+        },
+        "community_id": {
+            "title": "The community id(s) where this agent belongs",
+            "type": "array",
+            "minLength": 1,
+            "items": {
+                "type": "string",
+                "foreign_keys": [
+                    {
+                        "schema_id": "#Community",
+                        "members": ["."]
+                    }
+                ],
+                "minLength": 1
+            }
+        },
+        "agent_contact_id": {
+            "title": "The agent's contact id(s)",
+            "type": "array",
+            "minLength": 1,
+            "items": {
+                "type": "string",
+                "foreign_keys": [
+                    {
+                        "schema_id": "#Contact",
+                        "members": ["."]
+                    }
+                ],
+                "minLength": 1
+            }
+        },
+        "agent_status_id": {
+            "title": "_id of the current agent status",
+            "type": "string",
+            "foreign_keys": [
+                {
+                    "schema_id": "#AgentStatus",
+                    "members": ["."]
+                }
+            ],
+            "minLength": 1
+        },
+        "references": {
+            "title": "The agent's reference id(s)",
+            "type": "array",
+            "minLength": 1,
+            "items": {
+                "type": "string",
+                "foreign_keys": [
+                    {
+                        "schema_id": "#Reference",
+                        "members": ["."]
+                    }
+                ],
+                "minLength": 1
+            }
+        },
+        "agent_access": {
+            "title": "Methods to access the agent",
+            "type": "array",
+            "minLength": 1,
+            "items": {
+                "type": "object",
+                "properties": {
+                    "agent_access_type_id": {
+                        "title": "The agent access type id",
+                        "type": "string",
+                        "foreign_keys": [
+                            {
+                                "schema_id": "#AgentAccessType",
+                                "members": ["."]
+                            }
+                        ],
+                        "minLength": 1
+                    },
+                    "link": {
+                        "title": "The base link to the access point (when it is not a local algorithm)",
+                        "type": "string",
+                        "format": "uri"
+                    },
+                    "techdocs": {
+                        "title": "Optional technical documentation of the agent access",
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "uri": {
+                                    "title": "The URI of the technical documentation",
+                                    "type": "string",
+                                    "format": "uri"
+                                },
+                                "label": {
+                                    "title": "The type of URI (WSDL, WADL, OpenAPI/Swagger, Source code, Miscellaneous documentation)",
+                                    "type": "string",
+                                    "enum": ["WSDL", "WADL", "OpenAPI", "source", "doc"]
+                                }
+                            },
+                            "additionalProperties": false,
+                            "required": [
+                                "uri",
+                                "label"
+                            ]
+                        }
+                    }
+                },
+                "additionalProperties": true,
+                "required": [
+                    "agent_access_type_id"
+                ]
+            }
+        }
+    },
+    "additionalProperties": true,
+    "required": ["_id", "_type", "_schema", "_version", "name", "is_automated", "community_id", "agent_contact_id", "status_id", "agent_access"],
+    "primary_key": ["_id"],
+    "dependencies": {}
+}
