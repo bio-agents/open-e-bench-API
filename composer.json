@@ -1,5 +1,3 @@
-{
-    "require": {
-        "mongodb/mongodb": "^1.1"
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a67f39b63ce63bc625c3c9075b6c2b12fbb6dd0739799579bc5ddc0b1f63be56
+size 61

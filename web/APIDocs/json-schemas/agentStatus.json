@@ -1,27 +1,3 @@
-{
-    "id": "https://www.iechor-europe.org/excelerate/WP2/json-schemas/0.3/AgentStatus",
-    "$schema": "http://json-schema.org/draft-04/hyper-schema#",
-    "title": "Agent Status concept (IECHOR-EXCELERATE WP2 Benchmarking schemas)",
-    "type": "object",
-    "properties": {
-        "_id": {
-            "title": "The unique id of the agent status. It should be something meaningful, like a short word or an acronym",
-            "type": "string",
-            "minLength": 1
-        },
-        "_schema": {
-            "title": "The JSON schema absolute URI. It must match the value of 'id' in the JSON schema",
-            "type": "string",
-            "format": "uri",
-            "enum": ["https://www.iechor-europe.org/excelerate/WP2/json-schemas/0.3/AgentStatus"]
-        },
-        "description": {
-            "title": "Description of this agent status",
-            "type": "string"
-        }
-    },
-    "additionalProperties": true,
-    "required": ["_id", "_type", "_schema", "_version"],
-    "primary_key": ["_id"],
-    "dependencies": {}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:924ac66bd5f21da3934ab775989ec8248f1f4c09ec123078aa47bf3609932df7
+size 1054

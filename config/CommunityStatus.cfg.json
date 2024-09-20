@@ -1,25 +1,3 @@
-{
-    "baseXMLTag": "CommmunityStatus",
-    "defaultOp": "entry",
-    "addDefault": true,
-    "storeData": "",
-    "templateFieldDefaults": {
-        "search": {
-            "_id": "Acronym",
-            "description": "Description"
-        }
-    },
-    "templateAllFields": {
-            "_id": "Acronym",
-            "description": "Description"
-    },
-    "templateLinks": {
-        "_id": "<a href=\"##baseURL##/Community/##_id##.html\">##_id##</a>"
-    },
-    "templateArrayLinks": {
-    },
-    "classTemplate": "",
-    "textQueryOn": {
-        "_id": 1
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8694c75eba98e3b6bc055269604720f8476485bc61ccd067cf3ad685c05f8ee9
+size 567

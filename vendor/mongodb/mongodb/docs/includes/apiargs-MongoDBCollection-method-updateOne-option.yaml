@@ -1,16 +1,3 @@
-source:
-  file: apiargs-MongoDBCollection-common-option.yaml
-  ref: upsert
----
-source:
-  file: apiargs-MongoDBCollection-common-option.yaml
-  ref: bypassDocumentValidation
----
-source:
-  file: apiargs-MongoDBCollection-common-option.yaml
-  ref: collation
----
-source:
-  file: apiargs-MongoDBCollection-common-option.yaml
-  ref: writeConcern
-...
+version https://git-lfs.github.com/spec/v1
+oid sha256:b35ebc5ee309b0f3afd54ba73704729db7cb4938b718ef7773acc2b52f21197d
+size 343

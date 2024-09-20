@@ -1,26 +1,3 @@
-{
-    "baseXMLTag": "AgentStatus",
-    "defaultOp": "entry",
-    "addDefault": true,
-    "storeData": "",   
-    "templateFieldDefaults": {
-        "search": {
-            "_id": "Id",
-            "description": "Description"
-        }
-    },
-    "templateAllFields": {
-        "_id": "Id",
-        "description": "Description"
-    },
-    "templateLinks": {
-        "_id": "<a href=\"##baseURL##/AgentStatus/##_id##.html\">##_id##</a>"
-    },
-    "templateArrayLinks": {
-        "CommunityList": "API:Community/"
-    },
-    "textQueryOn": {
-        "_id": 1,
-        "description": 1
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:766a4cc6201fc07c1f8a3bffb26e27aa5a62961f7b23384e24a61cd1e49392ad
+size 592

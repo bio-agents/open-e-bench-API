@@ -1,32 +1,3 @@
-{
-    "baseXMLTag": "Reference",
-    "defaultOp": "entry",
-    "addDefault": true,
-    "joinFullPath": true,
-    "storeData": "",   
-    "templateFieldDefaults": {
-        "search": {
-            "_id": "Id",
-            "title": "Title",
-            "pubmed_id": "PubMed Id"
-        }
-    },
-    "templateAllFields": {
-        "_id": "Id",
-        "title": "Title",
-        "pubmed_id": "PubMed Id"
-    },
-    "templateLinks": {
-        "_id": "<a href=\"##baseURL##/Reference/##_id##.html\">##_id##</a>",
-        "pubmed_id": "<a href=\"##baseURL##/idsolv/PM:##pubmed_id##\">##pubmed_id##</a>"
-    },
-    "templateArrayLinks": {
-        "CommunityList": "API:Community"
-    },
-    "classTemplate": "file",
-    "textQueryOn": {
-        "_id": 1,
-        "title": 1,
-        "pubmed_id": 1
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:34bfeb1dd77b1bd6856ad20d6c45524b439611565ca38ff8adb24a6aaed1505a
+size 798

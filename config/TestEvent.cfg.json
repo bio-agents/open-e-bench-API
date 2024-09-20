@@ -1,20 +1,3 @@
-{
-    "baseXMLTag": "TestEvent",
-    "defaultOp": "entry",
-    "addDefault": true,
-    "storeData": "",
-    "templateFieldDefaults": {
-        "search": {
-            "_id": "Id"
-        }
-    },
-    "templateAllFields": {
-        "_id": "Id"
-    },
-    "templateLinks": {
-        "_id": "<a href=\"##baseURL##/TestEvent/##_id##.html\">##_id##</a>"
-    },
-    "templateArrayLinks": {
-    },
-    "classTemplate": "file"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a44cfec438316bd5d4cbed4e2affe1736b440f9fc73a168a3da7b38a2881eb17
+size 421

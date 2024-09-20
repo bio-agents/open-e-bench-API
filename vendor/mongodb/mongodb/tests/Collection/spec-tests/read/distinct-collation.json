@@ -1,33 +1,3 @@
-{
-  "data": [
-    {
-      "_id": 1,
-      "string": "PING"
-    },
-    {
-      "_id": 2,
-      "string": "ping"
-    }
-  ],
-  "minServerVersion": "3.4",
-  "tests": [
-    {
-      "description": "Distinct with a collation",
-      "operation": {
-        "name": "distinct",
-        "arguments": {
-          "fieldName": "string",
-          "collation": {
-            "locale": "en_US",
-            "strength": 2
-          }
-        }
-      },
-      "outcome": {
-        "result": [
-          "PING"
-        ]
-      }
-    }
-  ]
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6c2db7daeb75c65c0158066a65739669ebec26382b47f6863f074cc478491f6d
+size 523

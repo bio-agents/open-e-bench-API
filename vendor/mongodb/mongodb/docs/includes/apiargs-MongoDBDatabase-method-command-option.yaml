@@ -1,11 +1,3 @@
-source:
-  file: apiargs-common-option.yaml
-  ref: readPreference
-description: |
-   :manual:`Read preference </reference/read-preference>` to use for the
-   operation. Defaults to the database's read preference.
----
-source:
-  file: apiargs-MongoDBDatabase-common-option.yaml
-  ref: typeMap
-...
+version https://git-lfs.github.com/spec/v1
+oid sha256:9effb434cc264de25166133f8ce8bd669aa68a06f4de8ce4fa0d728553f59a3d
+size 293

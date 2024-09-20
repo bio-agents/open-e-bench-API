@@ -1,34 +1,3 @@
-{
-    "baseXMLTag": "Dataset",
-    "defaultOp": "entry",
-    "addDefault": true,
-    "storeData": "",   
-    "templateFieldDefaults": {
-        "search": {
-            "_id": "Community:Id",
-            "name": "Name",
-            "type": "type",
-            "description": "Description"
-        }
-    },
-    "templateAllFields": {
-        "_id": "Community:Id",
-        "name": "Name",
-        "type": "type",
-        "description": "Description"
-    },
-    "templateLinks": {
-        "_id": "<a href=\"##baseURL##/Dataset/##_id##.html\">##_id##</a>"
-    },
-    "templateArrayLinks": {
-        "dataset_contact_id": "API:Contact",
-        "Events": "API:BenchmarkingEvent",
-        "testEventList": "API:TestEvent"
-    },
-    "classTemplate": "file",
-    "textQueryOn": {
-        "_id": 1,
-        "name": 1,
-        "description": 1
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:cc9cd92f2f3aeb9d444f5bfc6faf5a9fa18ca452a0166b63673780c9e25a64cf
+size 843
